@@ -1,0 +1,25 @@
+Higherhrnet:
+
+python3 demo/bottom_up_img_demo.py configs/body/2d_kpt_sview_rgb_img/associative_embedding/coco/higherhrnet_w32_coco_512x512.py https://download.openmmlab.com/mmpose/bottom_up/higher_hrnet32_coco_512x512-8ae85183_20200713.pth --img-path ../H2C_ego_noAudio_10fps_x --out-img-root ../H2C_ego_noAudio_10fps_x_higherhrnet_pred
+
+python3 demo/bottom_up_img_demo.py configs/body/2d_kpt_sview_rgb_img/associative_embedding/coco/higherhrnet_w32_coco_512x512.py https://download.openmmlab.com/mmpose/bottom_up/higher_hrnet32_coco_512x512-8ae85183_20200713.pth --img-path ../M2C_ego_noAudio_10fps_x --out-img-root ../M2C_ego_noAudio_10fps_x_higherhrnet_pred
+
+python3 demo/bottom_up_img_demo.py configs/body/2d_kpt_sview_rgb_img/associative_embedding/coco/higherhrnet_w32_coco_512x512.py https://download.openmmlab.com/mmpose/bottom_up/higher_hrnet32_coco_512x512-8ae85183_20200713.pth --img-path ../video_1_cx --out-img-root ../video_1_cx_higherhrnet_pred
+
+hrformer:
+
+python3 hrformer_pred.py ../H2C_ego_noAudio_10fps_x ../hrformer/H2C_ego_noAudio_10fps_x_hrformer_pred
+python3 hrformer_pred.py ../M2C_ego_noAudio_10fps_x ../hrformer/M2C_ego_noAudio_10fps_x_hrformer_pred
+python3 hrformer_pred.py ../video_1_cx ../hrformer/video_1_cx_hrformer_pred
+
+vitpose small:
+
+python3 vitpose_s_pred.py ../H2C_ego_noAudio_10fps_x ../vitpose_s/H2C_ego_noAudio_10fps_x_vitpose_s_pred
+python3 vitpose_s_pred.py ../M2C_ego_noAudio_10fps_x ../vitpose_s/M2C_ego_noAudio_10fps_x_vitpose_s_pred
+python3 vitpose_s_pred.py ../video_1_cx ../vitpose_s/video_1_cx_vitpose_s_pred
+
+vitpose large:
+
+python3 vitpose_l_pred.py ../H2C_ego_noAudio_10fps_x ../vitpose_l/H2C_ego_noAudio_10fps_x_vitpose_l_pred
+python3 vitpose_l_pred.py ../M2C_ego_noAudio_10fps_x ../vitpose_l/M2C_ego_noAudio_10fps_x_vitpose_l_pred
+python3 vitpose_l_pred.py ../video_1_cx ../vitpose_l/video_1_cx_vitpose_l_pred
